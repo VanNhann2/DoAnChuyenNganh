@@ -29,6 +29,28 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="%PUBLIC_URL%/js/jquery-1.11.1.min.js"></script>
 <script src="%PUBLIC_URL%/js/bootstrap.js"></script>
     <title>React App</title>
+    <script type="text/javascript">
+      jQuery(document).ready(function($) {
+        $(".scroll").click(function(event){		
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+        });
+      });
+    </script> 
+    <script>
+    $(document).ready(function() { 
+      $("#owl-demo").owlCarousel({
+     
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
+        autoPlay:true,
+        items : 3,
+        itemsDesktop : [640,5],
+        itemsDesktopSmall : [414,4]
+     
+      });
+      
+    }); 
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
@@ -45,11 +67,76 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     -->
     <script src="%PUBLIC_URL%/js/responsiveslides.min.js"></script>
 	<script src="%PUBLIC_URL%/js/SmoothScroll.min.js"></script>
-	<script src="%PUBLIC_URL%/js/jarallax.js"></script>
+  <script src="%PUBLIC_URL%/js/jarallax.js"></script>
+  
+  <script type="text/javascript">
+    /* init Jarallax */
+    $('.jarallax').jarallax({
+      speed: 0.5,
+      imgWidth: 1366,
+      imgHeight: 768
+    })
+  </script>
+
 <script type="text/javascript" src="%PUBLIC_URL%/js/move-top.js"></script>
-	<script type="text/javascript" src="%PUBLIC_URL%/js/easing.js"></script>
-	<script src='%PUBLIC_URL%/js/jquery.typer.js'></script>
+  <script type="text/javascript" src="%PUBLIC_URL%/js/easing.js"></script>
+  
+  <script src='%PUBLIC_URL%/js/jquery.typer.js'></script>
+  <script>
+    var win = $(window),
+      foo = $('#typer');
+
+    foo.typer(['Lorem.!!', 'You dont know', 'your beautiful']);
+
+    // unneeded...
+    win.resize(function(){
+      var fontSize = Math.max(Math.min(win.width() / (1 * 10), parseFloat(Number.POSITIVE_INFINITY)), parseFloat(Number.NEGATIVE_INFINITY));
+
+      foo.css({
+        fontSize: fontSize * .8 + 'px'
+      });
+    }).resize();
+  </script>
+
+  <script type="text/javascript">
+		$(document).ready(function() {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+								
+			$().UItoTop({ easingType: 'easeOutQuart' });
+								
+			});
+  </script>
+  <!-- //here ends scrolling icon -->
 <script src="%PUBLIC_URL%/js/owl.carousel.js"></script>
 <script src="%PUBLIC_URL%/js/easy-responsive-tabs.js"></script>
+<script>
+	$(document).ready(function () {
+	$('#horizontalTab').easyResponsiveTabs({
+	type: 'default', //Types: default, vertical, accordion           
+	width: 'auto', //auto or any width like 600px
+	fit: true,   // 100% fit in a container
+	closed: 'accordion', // Start closed if in accordion view
+	activate: function(event) { // Callback function if tab is switched
+	var $tab = $(this);
+	var $info = $('#tabInfo');
+	var $name = $('span', $info);
+	$name.text($tab.text());
+	$info.show();
+	}
+	});
+	$('#verticalTab').easyResponsiveTabs({
+	type: 'vertical',
+	width: 'auto',
+	fit: true
+	});
+	});
+	</script>
   </body>
 </html>

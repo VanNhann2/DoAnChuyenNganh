@@ -1,13 +1,16 @@
 import React from 'react';
-import Menu from './Menu';
 import '../css/App.css';
-import './Home'
-import Home from './Home';
+//import '../css/style1.css'
+import Menu from './trangchu/Menu';
+import Footer from './trangchu/Footer'
+import Register from './trangdangki/Register'
 function App() {
   return (
     <div className="App">
       <Menu/>
-      <Home/>
+      {/* <Home/> */}
+      <Register/>
+      <Footer/>
     </div>
   );
 }
