@@ -3,9 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "babel-plugin-react-css-modules": "^5.2.6",
+    "css-loader": "^2.1.1",
     "jquery": "^3.4.1",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
+    "react-router-dom": "^5.0.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
@@ -28,5 +31,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "npm-install-webpack-plugin": "^4.0.5"
   }
 }

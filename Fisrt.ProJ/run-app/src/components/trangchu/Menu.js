@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-
+import { BrowserRouter as  Link,NavLink} from "react-router-dom";
+import '../../css/style.css'
 class Menu extends Component {
     render() {
         return (
@@ -16,13 +17,27 @@ class Menu extends Component {
     {/* Collect the nav links, forms, and other content for toggling */}
     <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul className="nav navbar-nav">
-        <li><a href="index1.html">Home | </a></li>
-        <li><a href="index1.html">Canon</a></li>
-        <li><a href="index1.html">Nikon</a></li>
-        <li><a href="index1.html">Fujifim</a></li>
-        <li><a href="index1.html">Sony</a></li>
-        <li><a href="index1.html">SamSung</a></li>
-        <li><a href="index1.html">Kolak</a></li>
+        <li>
+              <NavLink to="/">Home</NavLink>
+            </li>
+        <li>
+              <NavLink to="/canon">Canon</NavLink>
+            </li>
+        <li>
+              <NavLink to="/nikon">Nikon</NavLink>
+            </li>
+        <li>
+              <NavLink to="/fujifim">Fujifim</NavLink>
+            </li>
+        <li>
+              <NavLink to="/sony">Sony</NavLink>
+            </li>
+        <li>
+              <NavLink to="/samsung">SamSung</NavLink>
+            </li>
+        <li>
+              <Link to="/kolak">Kolak</Link>
+            </li>
       </ul>	
       <div className="clearfix"> </div>
     </div>	

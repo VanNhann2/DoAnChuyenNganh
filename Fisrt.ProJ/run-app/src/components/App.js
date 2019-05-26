@@ -1,17 +1,23 @@
 import React from 'react';
-import '../css/App.css';
+import { BrowserRouter as Router} from "react-router-dom";
+//import '../css/App.css';
 //import '../css/style1.css'
 import Menu from './trangchu/Menu';
-import Footer from './trangchu/Footer'
-import Register from './trangdangki/Register'
+//import Home from './trangchu/Home';
+import Footer from './trangchu/Footer';
+import DieuHuongURL from '../router/DieuHuongURL';
+import '../css/style1.css'
 function App() {
   return (
-    <div className="App">
-      <Menu/>
-      {/* <Home/> */}
-      <Register/>
-      <Footer/>
-    </div>
+    
+    <Router>
+      <div className="App">
+        <Menu/>
+          <DieuHuongURL/>
+        <Footer/>
+        
+      </div>
+    </Router>
   );
 }
 

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import '../../css/style.css'
 class Home extends Component {
     render() {
         return (
@@ -80,7 +80,7 @@ class Home extends Component {
                   <div id="owl-demo" className="owl-carousel owl-theme">
                     <div className="item">
                       <div className="about-grid-info">
-                        <img src="images/1.jpg" alt />
+                        <img src="images/1.jpg" alt="true" />
                         <div className="about-grid-caption"> 
                           <h4>Justo congue</h4>
                           <p>Fusce laoreet</p>
@@ -89,7 +89,7 @@ class Home extends Component {
                     </div>
                     <div className="item">
                       <div className="about-grid-info">
-                        <img src="images/2.jpg" alt />
+                        <img src="images/2.jpg" alt="true" />
                         <div className="about-grid-caption"> 
                           <h4>Nulla facilisi</h4>
                           <p>Lorem ipsum</p>
@@ -98,7 +98,7 @@ class Home extends Component {
                     </div>
                     <div className="item">
                       <div className="about-grid-info">
-                        <img src="images/3.jpg" alt />
+                        <img src="images/3.jpg" alt="true" />
                         <div className="about-grid-caption"> 
                           <h4>Aenean sed</h4>
                           <p>Nunc tincidunt</p>
@@ -107,7 +107,7 @@ class Home extends Component {
                     </div>
                     <div className="item">
                       <div className="about-grid-info">
-                        <img src="images/7.jpg" alt />
+                        <img src="images/7.jpg" alt="true" />
                         <div className="about-grid-caption"> 
                           <h4>Justo congue</h4>
                           <p>Phasellus magna</p>
@@ -116,7 +116,7 @@ class Home extends Component {
                     </div>
                     <div className="item">
                       <div className="about-grid-info">
-                        <img src="images/4.jpg" alt />
+                        <img src="images/4.jpg" alt="true" />
                         <div className="about-grid-caption"> 
                           <h4>Justo congue</h4>
                           <p>Fusce laoreet</p>
@@ -125,7 +125,7 @@ class Home extends Component {
                     </div>
                     <div className="item">
                       <div className="about-grid-info">
-                        <img src="images/5.jpg" alt />
+                        <img src="images/5.jpg" alt="true" />
                         <div className="about-grid-caption"> 
                           <h4>Nulla facilisi</h4>
                           <p>Lorem ipsum</p>
@@ -134,7 +134,7 @@ class Home extends Component {
                     </div>
                     <div className="item">
                       <div className="about-grid-info">
-                        <img src="images/1.jpg" alt />
+                        <img src="images/1.jpg" alt="true" />
                         <div className="about-grid-caption"> 
                           <h4>Aenean sed</h4>
                           <p>Nunc tincidunt</p>
@@ -143,7 +143,7 @@ class Home extends Component {
                     </div>
                     <div className="item">
                       <div className="about-grid-info">
-                        <img src="images/2.jpg" alt />
+                        <img src="images/2.jpg" alt="true" />
                         <div className="about-grid-caption">
                           <h4>Justo congue</h4>
                           <p>Phasellus magna</p>
@@ -382,7 +382,7 @@ class Home extends Component {
                   <div className="col-md-3 agileits_portfolio_grid">
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g1.jpg">
-                        <img src="images/g1.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g1.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -391,7 +391,7 @@ class Home extends Component {
                     </div>
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g2.jpg">
-                        <img src="images/g2.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g2.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -400,7 +400,7 @@ class Home extends Component {
                     </div>
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g3.jpg">
-                        <img src="images/g3.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g3.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -411,7 +411,7 @@ class Home extends Component {
                   <div className="col-md-3 agileits_portfolio_grid">
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g4.jpg">
-                        <img src="images/g4.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g4.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -420,7 +420,7 @@ class Home extends Component {
                     </div>
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g5.jpg">
-                        <img src="images/g5.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g5.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Monetary</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -429,7 +429,7 @@ class Home extends Component {
                     </div>
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g6.jpg">
-                        <img src="images/g6.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g6.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -440,7 +440,7 @@ class Home extends Component {
                   <div className="col-md-3 agileits_portfolio_grid">
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g7.jpg">
-                        <img src="images/g7.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g7.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -449,7 +449,7 @@ class Home extends Component {
                     </div>
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g1.jpg">
-                        <img src="images/g1.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g1.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -458,7 +458,7 @@ class Home extends Component {
                     </div>
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g2.jpg">
-                        <img src="images/g2.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g2.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -469,7 +469,7 @@ class Home extends Component {
                   <div className="col-md-3 agileits_portfolio_grid">
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g3.jpg">
-                        <img src="images/g3.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g3.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -478,7 +478,7 @@ class Home extends Component {
                     </div>
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g4.jpg">
-                        <img src="images/g4.jpg" alt=" " className="img-responsive" />
+                        <img src="images/g4.jpg" alt="true" className="img-responsive" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -487,7 +487,7 @@ class Home extends Component {
                     </div>
                     <div className="agileinfo_portfolio_grid hovereffect">
                       <a className="cm-overlay" href="images/g5.jpg">
-                        <img src="images/g5.jpg" alt=" " className="img-responsive" id="logocanon" />
+                        <img src="images/g5.jpg" alt="true" className="img-responsive" id="logocanon" />
                         <div className="overlay">
                           <h4>Photo Maker</h4>
                           <p>Nulla dui diam, gravida nec eros ut, congue.</p> 
@@ -511,16 +511,16 @@ class Home extends Component {
                   <div id="horizontalTab">
                     <ul className="resp-tabs-list">
                       <li>
-                        <img src="images/t11.jpg" alt=" " className="img-responsive" />
+                        <img src="images/t11.jpg" alt="true" className="img-responsive" />
                       </li>
                       <li>
-                        <img src="images/t22.jpg" alt=" " className="img-responsive" />
+                        <img src="images/t22.jpg" alt="true" className="img-responsive" />
                       </li>
                       <li>
-                        <img src="images/t33.jpg" alt=" " className="img-responsive" />
+                        <img src="images/t33.jpg" alt="true" className="img-responsive" />
                       </li>
                       <li>
-                        <img src="images/t44.jpg" alt=" " className="img-responsive" />
+                        <img src="images/t44.jpg" alt="true" className="img-responsive" />
                       </li>
                     </ul>
                     <div className="resp-tabs-container">
@@ -616,7 +616,7 @@ class Home extends Component {
                 <div className="w3-agile-blog-grids">
                   <div className="w3-agile-blog-grid">
                     <div className="col-md-5 w3-agile-blog-left">
-                      <a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g2.jpg" alt /></a>
+                      <a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g2.jpg" alt="true" /></a>
                     </div>
                     <div className="col-md-6 w3-agile-blog-right">
                       <div className="w3-agile-blog-right-top">
@@ -638,7 +638,7 @@ class Home extends Component {
                   </div>
                   <div className="w3-agile-blog-grid">
                     <div className="col-md-5 w3-agile-blog-left">
-                      <a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g7.jpg" alt /></a>
+                      <a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g7.jpg" alt="true" /></a>
                     </div>
                     <div className="col-md-6 w3-agile-blog-right">
                       <div className="w3-agile-blog-right-top">
@@ -672,7 +672,7 @@ class Home extends Component {
                   </div> 
                   <div className="modal-body">
                     <div className="agileits-w3layouts-info">
-                      <img src="images/7.jpg" alt />
+                      <img src="images/7.jpg" alt="true" />
                       <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim, in dapibus turpis porttitor quis. Suspendisse ultrices hendrerit massa. Nam id metus id tellus ultrices ullamcorper.  Cras tempor massa luctus, varius lacus sit amet, blandit lorem. Duis auctor in tortor sed tristique. Proin sed finibus sem</p>
                     </div>
                   </div>
