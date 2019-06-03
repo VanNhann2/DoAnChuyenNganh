@@ -4,7 +4,6 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 class CartItem extends Component {
     render() {
         var { item } = this.props
-        console.log(item);
 
         return (
             <div className="cart-header">

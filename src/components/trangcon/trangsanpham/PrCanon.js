@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Products from './products/Products'
 import ProductsContainer from '../../../containers/ProductsContainer';
+import MessageContainer from '../../../containers/MessageContainer'
+
 class PrCanon extends Component {
   render() {
     return (
@@ -77,6 +79,7 @@ class PrCanon extends Component {
             </div>
           </div>
           <ProductsContainer/>
+          <MessageContainer/>
         </div>
 
       </div>

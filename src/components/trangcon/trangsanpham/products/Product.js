@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, withRouter, Link } from "react-router-dom";
-
+import * as Message from "../../../../constants/Message"
 class Product extends Component {
     render() {
-        var { product } = this.props
+        var { product} = this.props
         return (
             <li>
                 <Link to ="/detail"><img src={product.image} className="img-responsive" alt={product.name}/></Link>
@@ -38,6 +38,7 @@ class Product extends Component {
 
     onAddToCart(product){
         this.props.onAddToCart(product)
+        this.props.onChangeMessage(Message.MSG_ADD_TO_CART_SUCCESS)
     }
 }
 
