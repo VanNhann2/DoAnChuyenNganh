@@ -2,22 +2,23 @@ import React, { Component } from 'react';
 
 class CartResult extends Component {
     render() {
-        return (
+        var { cart } = this.props
+         return (
             <div className="col-md-3 cart-total">
                 <a className="continue" href="/canon">Continue to basket</a>
                 <div className="price-details">
-                    <h3>Price Details</h3>
+                    <h3>Thanh Toán Sản Phẩm</h3>
                     <span>Total</span>
-                    <span className="total1">6200.00</span>
-                    <span>Discount</span>
+                    <span className="total1">{this.showTotalAmount(cart)} $</span>
+                    <span>Giảm Giá</span>
                     <span className="total1">---</span>
-                    <span>Delivery Charges</span>
+                    <span>Phí Vận Chuyển</span>
                     <span className="total1">150.00</span>
                     <div className="clearfix" />
                 </div>
                 <ul className="total_price">
-                    <li className="last_price"> <h4>TOTAL</h4></li>
-                    <li className="last_price"><span>6350.00</span></li>
+                    <li className="last_price"> <h4>Total</h4></li>
+                <li className="last_price"><span>{this.showTotalAmount(cart) + 150} $</span></li>
                     <div className="clearfix"> </div>
                 </ul>
                 <div className="clearfix" />
@@ -31,6 +32,16 @@ class CartResult extends Component {
             </div>
 
         );
+    }
+
+    showTotalAmount = (cart) => {
+        var total = 0;
+        if (cart.length > 0) {
+            for (var i = 0; i < cart.length; i++) {
+                total += cart[i].product.price * cart[i].quantity;
+            }
+        }
+        return total;
     }
 }
 

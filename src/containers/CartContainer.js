@@ -2,15 +2,19 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux'
 import PropTypes from 'prop-types';
 import Cart from '../components/trangcon/trangsanpham/cart/Cart'
+//import Cart from '../components/trangcon/trangsanpham/cart/CartResult'
 import * as Message from '../constants/Message'
 import CartItem from '../components/trangcon/trangsanpham/cart/CartItem';
+import CartResult from '../components/trangcon/trangsanpham/cart/CartResult';
 class CartContainer extends Component {
   render() {
     var { cart } = this.props;
     return (
       <Cart>
-        {this.showCartItem(cart)}
+        { this.showCartItem(cart) }
+        { this.showTotalAmount(cart) }
       </Cart>
+      
     )
 
   }
@@ -31,6 +35,14 @@ class CartContainer extends Component {
     return result
   }
 
+
+    showTotalAmount = (cart) => {
+        var result = null;
+        if (cart.length > 0) {
+            result = <CartResult cart={cart} />
+        }
+        return result;
+    }
 
 }
 

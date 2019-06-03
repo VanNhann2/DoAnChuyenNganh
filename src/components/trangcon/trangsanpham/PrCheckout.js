@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 //import Cart from './cart/Cart'
-import CartResult from './cart/CartResult';
+
 import CartContainer from '../../../containers/CartContainer';
 
 
@@ -23,7 +23,6 @@ class PrCheckout extends Component {
       <div>
         <div className="container">
           <div className="check">
-            <CartResult/>
             <CartContainer/>
            <div className="clearfix"> </div>
           </div>
