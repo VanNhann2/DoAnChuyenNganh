@@ -4,14 +4,13 @@ import CartItem from './CartItem';
 
 class Cart extends Component {
     render() {
+        var { children } = this.props
         return (
             <div className="col-md-9 cart-items">
-            <h1>My Shopping Bag (2)</h1>
-                <CartItem/>
-                <CartItem/>
-                <CartItem/>
-          </div>
-         
+                <h1>My Shopping Bag (2)</h1>
+                {children}
+            </div>
+
         );
     }
 }

@@ -20,6 +20,10 @@ export default function App() {
     })
   })
 
+  // if (firebase.getCurrentUsername()) {
+  //   alert('done !!')
+  // }
+
   return firebaseInitialized !== false ? (
     <Router>
       <Menu />

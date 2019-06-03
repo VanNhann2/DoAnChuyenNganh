@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Products from './products/Products'
+import ProductsContainer from '../../../containers/ProductsContainer';
 class PrCanon extends Component {
   render() {
     return (
@@ -75,7 +76,7 @@ class PrCanon extends Component {
               </div>
             </div>
           </div>
-          <Products />
+          <ProductsContainer/>
         </div>
 
       </div>

@@ -60,7 +60,7 @@ class Home extends Component {
                       {/* Collect the nav links, forms, and other content for toggling */}
                       <div className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul className="nav navbar-nav">
-                          {/* <li><a class="active" href="index.html">Home</a></li> */}
+                          {/* <li><a className="active" href="index.html">Home</a></li> */}
                           <li><a href="#about" className="scroll">About</a></li>
                           <li><a href="#services" className="scroll">Thương hiệu</a></li>
                           <li><a href="#gallery" className="scroll">Album</a></li>
@@ -74,7 +74,7 @@ class Home extends Component {
                   </div>
                   {/* w3-banner */}
                   <div className="w3-banner">
-                  <p class="intro-subtitle"><span class="text-slider-items">CEO DevFolio,Web Developer,Web Designer,Frontend Developer,Graphic Designer</span><strong class="text-slider"></strong></p>
+                  <p className="intro-subtitle"><span className="text-slider-items">CEO DevFolio,Web Developer,Web Designer,Frontend Developer,Graphic Designer</span><strong className="text-slider"></strong></p>
                     <div className="top-banner-right">
                       <ul>
                         <li><a className="facebook" href="#"><i className="fab fa-facebook-f" aria-hidden="true" /></a></li>
@@ -215,13 +215,13 @@ class Home extends Component {
                           </div>
                         </div>
                         {/* Left and right controls */}
-                        {/*  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                                  <span class="glyphicon glyphicon-chevron-left"></span>
-                                                  <span class="sr-only">Previous</span>
+                        {/*  <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                  <span className="glyphicon glyphicon-chevron-left"></span>
+                                                  <span className="sr-only">Previous</span>
                                                 </a>
-                                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                                  <span class="glyphicon glyphicon-chevron-right"></span>
-                                                  <span class="sr-only">Next</span>
+                                                <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                                                  <span className="glyphicon glyphicon-chevron-right"></span>
+                                                  <span className="sr-only">Next</span>
                                                 </a> */}
                       </div>
                       {/* end ảnh cột 1 */}
@@ -250,13 +250,13 @@ class Home extends Component {
                           </div>
                         </div>
                         {/* Left and right controls */}
-                        {/*  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                                                  <span class="glyphicon glyphicon-chevron-left"></span>
-                                                  <span class="sr-only">Previous</span>
+                        {/*  <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+                                                  <span className="glyphicon glyphicon-chevron-left"></span>
+                                                  <span className="sr-only">Previous</span>
                                                 </a>
-                                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                                                  <span class="glyphicon glyphicon-chevron-right"></span>
-                                                  <span class="sr-only">Next</span>
+                                                <a className="right carousel-control" href="#myCarousel" data-slide="next">
+                                                  <span className="glyphicon glyphicon-chevron-right"></span>
+                                                  <span className="sr-only">Next</span>
                                                 </a> */}
                       </div>
                       {/* end ảnh cột 2 */}
@@ -285,13 +285,13 @@ class Home extends Component {
                           </div>
                         </div>
                         {/* Left and right controls */}
-                        {/*  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
+                        {/*  <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span className="glyphicon glyphicon-chevron-left"></span>
+              <span className="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
+            <a className="right carousel-control" href="#myCarousel" data-slide="next">
+              <span className="glyphicon glyphicon-chevron-right"></span>
+              <span className="sr-only">Next</span>
             </a> */}
                       </div>
                       {/* end ảnh cột 3 */}
@@ -322,13 +322,13 @@ class Home extends Component {
                           </div>
                         </div>
                         {/* Left and right controls */}
-                        {/*  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
+                        {/*  <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span className="glyphicon glyphicon-chevron-left"></span>
+              <span className="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
+            <a className="right carousel-control" href="#myCarousel" data-slide="next">
+              <span className="glyphicon glyphicon-chevron-right"></span>
+              <span className="sr-only">Next</span>
             </a> */}
                       </div>
                       {/* end ảnh cột 4 */}
@@ -383,13 +383,13 @@ class Home extends Component {
                           </div>
                         </div>
                         {/* Left and right controls */}
-                        {/*  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left"></span>
-              <span class="sr-only">Previous</span>
+                        {/*  <a className="left carousel-control" href="#myCarousel" data-slide="prev">
+              <span className="glyphicon glyphicon-chevron-left"></span>
+              <span className="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right"></span>
-              <span class="sr-only">Next</span>
+            <a className="right carousel-control" href="#myCarousel" data-slide="next">
+              <span className="glyphicon glyphicon-chevron-right"></span>
+              <span className="sr-only">Next</span>
             </a> */}
                       </div>
                       {/* end ảnh cột 6*/}

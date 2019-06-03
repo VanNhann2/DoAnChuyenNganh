@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Cart from './cart/Cart'
+//import Cart from './cart/Cart'
 import CartResult from './cart/CartResult';
+import CartContainer from '../../../containers/CartContainer';
 
 
 class PrCheckout extends Component {
@@ -23,7 +24,7 @@ class PrCheckout extends Component {
         <div className="container">
           <div className="check">
             <CartResult/>
-             <Cart/>
+            <CartContainer/>
            <div className="clearfix"> </div>
           </div>
         </div>
