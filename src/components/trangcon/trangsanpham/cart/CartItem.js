@@ -2,12 +2,23 @@ import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 class CartItem extends Component {
+
+    constructor(props) {
+        super(props)
+        this.state = {
+            quantity: 1
+        }
+    }
     render() {
         var { item } = this.props
-
+        var {quantity} = item.quantity > 0 ? item : this.state
         return (
             <div className="cart-header">
-                <div className="close1"> <i className="fas fa-window-close"></i></div>
+                <div className="close">
+                    <i className="fas fa-window-close"
+                        onClick={() => this.onDeleteProduct(item.product)}
+                    />
+                </div>
                 <div className="cart-sec simpleCart_shelfItem">
                     <div className="cart-item cyc">
                         <img src={item.product.image} className="img-responsive" alt={item.product.name} />
@@ -19,8 +30,15 @@ class CartItem extends Component {
                         </h3>
                         <ul className="qty">
                             {/* <li><p>Size : 5</p></li>  PHẢI CÓ THÊM SỐ LƯỢNG TẠI ĐÂY..........................................................*/}
-                            <li><p>Số lượng mua: {item.quantity}</p></li> <br />
+                            <li><p>Số lượng mua: {quantity}</p></li> <br />
                             <li><p>Tổng tiền: {this.totalMoney(item.product.price, item.quantity)}</p></li>
+                            <button className="btn btn-warning"
+                                onClick={() => this.onUpdateQuantity(item.product, item.quantity - 1)}>
+                                -</button>
+
+                            <button className="btn btn-danger"
+                                onClick={() => this.onUpdateQuantity(item.product, item.quantity + 1)}>
+                                +</button>
                         </ul>
                         <div className="delivery">
                             <p>Service Charges : Rs.100.00</p>
@@ -32,6 +50,23 @@ class CartItem extends Component {
                 </div>
             </div>
         );
+    }
+
+    onUpdateQuantity = (product, quantity) => {
+        if(quantity > 0){
+            this.setState({
+                quantity: quantity
+            })
+            this.props.onUpdateProductInCart(product, quantity)
+        }
+    }
+
+
+
+    onDeleteProduct = (product)  => {
+        var { onDeleteProductInCart } = this.props
+        onDeleteProductInCart(product)
+
     }
 
     totalMoney = (price, quantity) => {
