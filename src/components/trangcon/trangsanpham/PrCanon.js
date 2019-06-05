@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Products from './products/Products'
+//import Products from './products/Products'
 import ProductsContainer from '../../../containers/ProductsContainer';
 import MessageContainer from '../../../containers/MessageContainer'
 

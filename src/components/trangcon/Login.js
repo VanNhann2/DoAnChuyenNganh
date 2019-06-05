@@ -5,11 +5,10 @@ import firebase from '../../connectdb/firebase'
 
 // import firebase from 'firebase'
 //import Home from '../trangchu/Home';
-
-import { Link, withRouter, NavLink } from 'react-router-dom';
+import {  withRouter, NavLink } from 'react-router-dom';  //Link,
 
 function Login(props) {
-  const { classes } = props
+ // const { classes } = props
   const [email, setEmail] = useState('')
   const [password, setPassword] = useState('')
   return (
@@ -44,7 +43,7 @@ function Login(props) {
                     <input type="submit" defaultValue="sign in" id="register-submit" onClick={login} />
                   </div>
                   <div className="forget">
-                    <a href="#">forgot your password</a> <br />
+                    <a href="true">forgot your password</a> <br />
                     <NavLink to="/register">go to register</NavLink>
 
                   </div>

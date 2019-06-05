@@ -39,7 +39,7 @@ class PrDetail extends Component {
           </div>
           <div className="desc1 span_3_of_2">
             <h3>soluta nobis eleifend option</h3>
-            <span className="brand">Brand: <a href="#">Sed do eiusmod </a></span>
+            <span className="brand">Brand: <a href="true">Sed do eiusmod </a></span>
             <br />
             <span className="code">Product Code: Product 11</span>
             <p>when an unknown printer took a galley of type and scrambled it to make</p>
@@ -63,7 +63,7 @@ class PrDetail extends Component {
             <div className="btn_form">
               <a href="checkout.html">buy</a>
             </div>
-            <a href="#"><span>login to save in wishlist </span></a>
+            <a href="true"><span>login to save in wishlist </span></a>
           </div>
           <div className="clearfix" />
         </div>
@@ -79,7 +79,7 @@ class PrDetail extends Component {
                 <img src="images/w8.jpg" className="img-responsive " alt="true" />
               </div>
               <div className="prod1-desc">
-                <h5><a className="product_link" href="#">Excepteur sint</a></h5>
+                <h5><a className="product_link" href="true">Excepteur sint</a></h5>
                 <p className="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>									
               </div>
               <div className="clearfix" />
@@ -96,7 +96,7 @@ class PrDetail extends Component {
                 <img src="images/w10.jpg" className="img-responsive " alt="true" />
               </div>
               <div className="prod1-desc">
-                <h5><a className="product_link" href="#">Excepteur sint</a></h5>
+                <h5><a className="product_link" href="true">Excepteur sint</a></h5>
                 <p className="product_descr"> Vivamus ante lorem, eleifend nec interdum non, ullamcorper et arcu. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>									
               </div>
               <div className="clearfix" />

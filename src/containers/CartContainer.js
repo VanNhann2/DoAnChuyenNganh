@@ -58,7 +58,7 @@ CartContainer.propTypes = {
       image: PropTypes.string.isRequired,
       description: PropTypes.string.isRequired,
       price: PropTypes.number.isRequired,
-      model: PropTypes.string.isRequired,
+      // model: PropTypes.string.isRequired,
       inventory: PropTypes.number.isRequired
     }).isRequired,
     quantity: PropTypes.number.isRequired

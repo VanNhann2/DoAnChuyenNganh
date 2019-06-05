@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../css/style1.css';
-import {Link, withRouter} from 'react-router-dom'
+import { withRouter} from 'react-router-dom' //Link,
 import firebase from '../../connectdb/firebase'
 
 function Register(props) {
@@ -52,7 +52,7 @@ function Register(props) {
     <input type="submit" defaultValue="create an account" id="register-submit" onClick={onRegister} />
   </div>
   <div className="sky-form">
-    <label className="checkbox"><input type="checkbox" name="checkbox" /><i />i agree to shoppe.com &nbsp;<a className="terms" href="#"> terms of service</a> </label>
+    <label className="checkbox"><input type="checkbox" name="checkbox" /><i />i agree to shoppe.com &nbsp;<a className="terms" href="true"> terms of service</a> </label>
   </div>
 </form>
 

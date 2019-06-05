@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import { BrowserRouter as Router, Route, withRouter, Link } from "react-router-dom";
+import React  from 'react'  //,  { useEffect, useState } 
+import { BrowserRouter as Router,  withRouter, Link } from "react-router-dom";  //Route,
 import firebase from '../../connectdb/firebase'
 function Menu2(props) {
 
@@ -19,7 +19,7 @@ function Menu2(props) {
             <div className="head-t">
               <div className="logo">
                 {/* <a href="/"><img src="images/login.png" className="img-responsive" alt="true" /> </a> */}
-                <Link to="/"><img src="images/login.png" className="img-responsive" alt="true" /> </Link>
+                <Link to="/"><img src="../images/login.png" className="img-responsive" alt="true" /> </Link>
               </div>
               {/* start header_right */}
               <div className="header_right">
@@ -32,7 +32,7 @@ function Menu2(props) {
                       <h3> <span className="simpleCart_total">$0.00</span> (<span id="simpleCart_quantity" className="simpleCart_quantity">0</span> items)<img src="images/bag.png" alt="true" /></h3>
 
                     </Link>
-                    <p><a href="javascript:;" className="simpleCart_empty">(empty card)</a></p>
+                    <p><a href="true" className="simpleCart_empty">(empty card)</a></p>
                     <div className="clearfix"> </div>
                   </div>
                   <div className="create_btn">

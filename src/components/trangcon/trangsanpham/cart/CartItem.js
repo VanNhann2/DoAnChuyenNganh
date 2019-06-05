@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as  Link } from "react-router-dom"; //  Router, Route,
 
 class CartItem extends Component {
 
@@ -11,6 +11,8 @@ class CartItem extends Component {
     }
     render() {
         var { item } = this.props
+        console.log(item.product);
+        
         var {quantity} = item.quantity > 0 ? item : this.state
         return (
             <div className="cart-header">
@@ -26,11 +28,12 @@ class CartItem extends Component {
                     <div className="cart-item-info">
                         <h3>
                             {/* <a href="/detail">Mountain Hopper(XS R034)</a><span>Model No: 3578</span> */}
-                            <Link to="/detail">{item.product.name}</Link><span>{item.product.model}</span>
+                            <Link to="/detail">{item.product.name}</Link><span></span>
                         </h3>
                         <ul className="qty">
                             {/* <li><p>Size : 5</p></li>  PHẢI CÓ THÊM SỐ LƯỢNG TẠI ĐÂY..........................................................*/}
                             <li><p>Số lượng mua: {quantity}</p></li> <br />
+                            <li><p>Số hiệu:  {item.product.model}</p></li> <br />
                             <li><p>Tổng tiền: {this.totalMoney(item.product.price, item.quantity)}</p></li>
                             <button className="btn btn-warning"
                                 onClick={() => this.onUpdateQuantity(item.product, item.quantity - 1)}>

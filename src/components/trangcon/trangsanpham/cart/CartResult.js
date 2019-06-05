@@ -22,11 +22,11 @@ class CartResult extends Component {
                     <div className="clearfix"> </div>
                 </ul>
                 <div className="clearfix" />
-                <a className="order" href="#">Place Order</a>
+                <a className="order" href="true">Place Order</a>
                 <div className="total-item">
                     <h3>OPTIONS</h3>
                     <h4>COUPONS</h4>
-                    <a className="cpns" href="#">Apply Coupons</a>
+                    <a className="cpns" href="true">Apply Coupons</a>
                     <p><a href="/log">Log In</a> to use accounts - linked coupons</p>
                 </div>
             </div>

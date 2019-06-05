@@ -4,7 +4,7 @@ import Products from '../components/trangcon/trangsanpham/products/Products'
 import Product from '../components/trangcon/trangsanpham/products/Product';
 import PropTypes from 'prop-types';
 import { actAddToCart, actChangeMessage } from '../actions/index'
-import message from '../reducers/message';
+//import message from '../reducers/message';
 
 class ProductsContainer extends Component {
   render() {
@@ -45,6 +45,7 @@ ProductsContainer.propTypes = {
             image : PropTypes.string.isRequired,
             description : PropTypes.string.isRequired,
             price : PropTypes.number.isRequired,
+            model : PropTypes.string.isRequired,
             inventory : PropTypes.number.isRequired
         })
     ).isRequired,

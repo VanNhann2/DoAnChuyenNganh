@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as Router, Route, withRouter, Link } from "react-router-dom";
+import { BrowserRouter as  Link } from "react-router-dom"; //Router, Route, withRouter,
 import * as Message from "../../../../constants/Message"
 class Product extends Component {
     render() {
@@ -30,7 +30,7 @@ class Product extends Component {
 
                     </ul> */}
                     <div className="item_add"><span className="item_price"><h6>ONLY ${product.price}</h6></span></div>
-                    <div className="item_add"><span className="item_price"><a onClick = { () => this.onAddToCart(product) }>add to cart</a></span></div>
+                    <div className="item_add"><span className="item_price"><a href="/checkout" onClick = { () => this.onAddToCart(product) }>add to cart</a></span></div>
                 </div>
             </li>
         );

@@ -77,10 +77,10 @@ class Home extends Component {
                   <p className="intro-subtitle"><span className="text-slider-items">CEO DevFolio,Web Developer,Web Designer,Frontend Developer,Graphic Designer</span><strong className="text-slider"></strong></p>
                     <div className="top-banner-right">
                       <ul>
-                        <li><a className="facebook" href="#"><i className="fab fa-facebook-f" aria-hidden="true" /></a></li>
-                        <li><a className="facebook" href="#"><i className="fab fa-twitter" aria-hidden="true" /></a></li>
-                        <li><a className="facebook" href="#"><i className="fab fa-facebook-messenger" /></a></li>
-                        <li><a className="facebook" href="#"><i className="fab fa-google-plus-g" /></a></li>
+                        <li><a className="facebook" href="true"><i className="fab fa-facebook-f" aria-hidden="true" /></a></li>
+                        <li><a className="facebook" href="true"><i className="fab fa-twitter" aria-hidden="true" /></a></li>
+                        <li><a className="facebook" href="true"><i className="fab fa-facebook-messenger" /></a></li>
+                        <li><a className="facebook" href="true"><i className="fab fa-google-plus-g" /></a></li>
                       </ul>
                     </div>
                     <div className="w3ls-phone">
@@ -192,7 +192,7 @@ class Home extends Component {
                 <div className="middle-bottom-grids">
                   <div className="col-md-6 w3l-one">
                     <div className="one">
-                      <h4><span>01</span><a href="#">Canon</a></h4>
+                      <h4><span>01</span><a href="true">Canon</a></h4>
                       <p>Nguồn gốc của Canon là "Phòng thí nghiệm dụng cụ quang học chính xác" (Precision Optical Instruments Laboratory) được thành lập năm 1937 bởi bốn người: Takeshi Mitarai, Goro Yoshida, Saburo Uchida và Takeo Maeda. Sau đó, phòng thí nghiệm này đổi tên sang Seikikōgaku kenkyūsho </p>
                       {/* ảnh cột 1 */}
                       <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -227,7 +227,7 @@ class Home extends Component {
                       {/* end ảnh cột 1 */}
                     </div>
                     <div className="one-2">
-                      <h4><span>02</span><a href="#">Sony</a></h4>
+                      <h4><span>02</span><a href="true">Sony</a></h4>
                       <p>Sony Alpha hay Sony α (alpha trong bảng chữ cái tiếng Hy Lạp) là dòng sản phẩm máy ảnh DSLR và SLT được Sony công bố vào ngày 5 tháng 6 năm 2006.[1] Sony α được thành lập và mở rộng dựa trên công nghệ máy ảnh của Konica Minolta và hệ thống ngàm ống kính của Minolta AF. Sony sở hữu 11.08% cổ phần của Tamron, công ty ống kính máy ảnh Nhật Bản[2] đang hợp tác sản xuất với Sony và Konica Minolta.</p>
                       {/* ảnh cột 2 */}
                       <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -262,7 +262,7 @@ class Home extends Component {
                       {/* end ảnh cột 2 */}
                     </div>
                     <div className="one-3">
-                      <h4><span>03</span><a href="#">Fujifilm</a></h4>
+                      <h4><span>03</span><a href="true">Fujifilm</a></h4>
                       <p>Fujifilm được thành lập vào năm 1934 với mục đích sản xuất phim ảnh. Qua nhiều thập kỷ, chúng tôi đã đa dạng hóa tham gia các thị trường mới và tạo dựng sự hiện diện mạnh mẽ trên toàn cầu.</p>
                       {/* ảnh cột 3 */}
                       <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -299,7 +299,7 @@ class Home extends Component {
                   </div>
                   <div className="col-md-6 w3-two">
                     <div className="two">
-                      <h4><span>04</span><a href="#">Nikon</a></h4>
+                      <h4><span>04</span><a href="true">Nikon</a></h4>
                       <p>Công ty được lập năm 1917 với tên gọi Nippon Kōgaku Kōgyō (日本光学工業株式会社 "Japan Optical Industries"); sau đó đổi tên thành Nikon Corporation năm 1988</p>
                       {/* ảnh cột 4 */}
                       <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -334,7 +334,7 @@ class Home extends Component {
                       {/* end ảnh cột 4 */}
                     </div>
                     <div className="two-1">
-                      <h4><span>05</span><a href="#">Kodak</a></h4>
+                      <h4><span>05</span><a href="true">Kodak</a></h4>
                       <p>Duis venenatis, turpis eu bibendum porttitor, sapien quam ultricies tellus, ac rhoncus risus odio eget nunc. Pellentesque ac fermentum diam. Integer eu facilisis nunc, a iaculis felis. Pellentesque pellentesque tempor enim</p>
                       {/* ảnh cột 5*/}
                       <div id="myCarousel" className="carousel slide" data-ride="carousel">
@@ -563,10 +563,10 @@ class Home extends Component {
                           <div className="w3_agileits_social_media team_agile_w3l">
                             <ul className="social-icons3">
                               <li className="agileinfo_share">Follow In</li>
-                              <li><a href="#" className="wthree_facebook"> <i className="fa fa-facebook" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_twitter"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_dribbble"><i className="fa fa-dribbble" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_behance"><i className="fa fa-behance" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_facebook"> <i className="fa fa-facebook" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_twitter"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_dribbble"><i className="fa fa-dribbble" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_behance"><i className="fa fa-behance" aria-hidden="true" /></a></li>
                             </ul>
                           </div>								
                         </div>
@@ -582,10 +582,10 @@ class Home extends Component {
                           <div className="w3_agileits_social_media team_agile_w3l">
                             <ul className="social-icons3">
                               <li className="agileinfo_share">Follow In</li>
-                              <li><a href="#" className="wthree_facebook"> <i className="fa fa-facebook" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_twitter"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_dribbble"><i className="fa fa-dribbble" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_behance"><i className="fa fa-behance" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_facebook"> <i className="fa fa-facebook" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_twitter"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_dribbble"><i className="fa fa-dribbble" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_behance"><i className="fa fa-behance" aria-hidden="true" /></a></li>
                             </ul>
                           </div>									
                         </div>
@@ -601,10 +601,10 @@ class Home extends Component {
                           <div className="w3_agileits_social_media team_agile_w3l">
                             <ul className="social-icons3">
                               <li className="agileinfo_share">Follow In</li>
-                              <li><a href="#" className="wthree_facebook"> <i className="fa fa-facebook" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_twitter"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_dribbble"><i className="fa fa-dribbble" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_behance"><i className="fa fa-behance" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_facebook"> <i className="fa fa-facebook" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_twitter"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_dribbble"><i className="fa fa-dribbble" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_behance"><i className="fa fa-behance" aria-hidden="true" /></a></li>
                             </ul>
                           </div>								
                         </div>
@@ -620,10 +620,10 @@ class Home extends Component {
                           <div className="w3_agileits_social_media team_agile_w3l">
                             <ul className="social-icons3">
                               <li className="agileinfo_share">Follow In</li>
-                              <li><a href="#" className="wthree_facebook"> <i className="fa fa-facebook" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_twitter"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_dribbble"><i className="fa fa-dribbble" aria-hidden="true" /></a></li>
-                              <li><a href="#" className="wthree_behance"><i className="fa fa-behance" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_facebook"> <i className="fa fa-facebook" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_twitter"><i className="fa fa-twitter" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_dribbble"><i className="fa fa-dribbble" aria-hidden="true" /></a></li>
+                              <li><a href="true" className="wthree_behance"><i className="fa fa-behance" aria-hidden="true" /></a></li>
                             </ul>
                           </div>				
                         </div>
@@ -645,7 +645,7 @@ class Home extends Component {
                 <div className="w3-agile-blog-grids">
                   <div className="w3-agile-blog-grid">
                     <div className="col-md-5 w3-agile-blog-left">
-                      <a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g2.jpg" alt="true" /></a>
+                      <a href="true" data-toggle="modal" data-target="#myModal"><img src="images/g2.jpg" alt="true" /></a>
                     </div>
                     <div className="col-md-6 w3-agile-blog-right">
                       <div className="w3-agile-blog-right-top">
@@ -653,21 +653,21 @@ class Home extends Component {
                           <i className="fas fa-pencil-ruler" />
                         </div>
                         <div className="blog-left-right-top">
-                          <h4><a href="#" data-toggle="modal" data-target="#myModal">Integer et turpis augue. In hac habitasse platea dictumst.</a></h4>
-                          <p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
+                          <h4><a href="true" data-toggle="modal" data-target="#myModal">Integer et turpis augue. In hac habitasse platea dictumst.</a></h4>
+                          <p>Posted By <a href="true">Admin</a> &nbsp;&nbsp; on June 2, 2016 &nbsp;&nbsp; <a href="true">Comments (10)</a></p>
                         </div>
                         <div className="clearfix"> </div>
                       </div>
                       <div className="w3-agile-blog-right-info">
                         <p>Nullam in dui dolor. Donec faucibus, est sed mattis placerat, lorem orci vestibulum lorem, vel accumsan nisl urna eget leo. Cras varius bibendum augue nec pretium. Aenean a ex ante. Nunc ut dignissim justo, ut commodo odio. Donec magna mi, accumsan a mi eu, fermentum tempus elit.</p>
-                        <a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+                        <a href="true" data-toggle="modal" data-target="#myModal">Read More</a>
                       </div>
                     </div>
                     <div className="clearfix"> </div>
                   </div>
                   <div className="w3-agile-blog-grid">
                     <div className="col-md-5 w3-agile-blog-left">
-                      <a href="#" data-toggle="modal" data-target="#myModal"><img src="images/g7.jpg" alt="true" /></a>
+                      <a href="true" data-toggle="modal" data-target="#myModal"><img src="images/g7.jpg" alt="true" /></a>
                     </div>
                     <div className="col-md-6 w3-agile-blog-right">
                       <div className="w3-agile-blog-right-top">
@@ -675,14 +675,14 @@ class Home extends Component {
                           <i className="fab fa-app-store" aria-hidden="true" />
                         </div>
                         <div className="blog-left-right-top">
-                          <h4><a href="#" data-toggle="modal" data-target="#myModal">Integer et turpis augue. In hac habitasse platea dictumst.</a></h4>
-                          <p>Posted By <a href="#">Admin</a> &nbsp;&nbsp; on June 2, 2016 &nbsp;&nbsp; <a href="#">Comments (10)</a></p>
+                          <h4><a href="true" data-toggle="modal" data-target="#myModal">Integer et turpis augue. In hac habitasse platea dictumst.</a></h4>
+                          <p>Posted By <a href="true">Admin</a> &nbsp;&nbsp; on June 2, 2016 &nbsp;&nbsp; <a href="true">Comments (10)</a></p>
                         </div>
                         <div className="clearfix"> </div>
                       </div>
                       <div className="w3-agile-blog-right-info">
                         <p>Nullam in dui dolor. Donec faucibus, est sed mattis placerat, lorem orci vestibulum lorem, vel accumsan nisl urna eget leo. Cras varius bibendum augue nec pretium. Aenean a ex ante. Nunc ut dignissim justo, ut commodo odio. Donec magna mi, accumsan a mi eu, fermentum tempus elit.</p>
-                        <a href="#" data-toggle="modal" data-target="#myModal">Read More</a>
+                        <a href="true" data-toggle="modal" data-target="#myModal">Read More</a>
                       </div>
                     </div>
                     <div className="clearfix"> </div>
