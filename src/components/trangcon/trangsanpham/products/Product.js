@@ -17,7 +17,7 @@ class Product extends Component {
                         </li>
                         <li>
                             <i className="fa fa-star"></i>
-                        </li>
+                        </li> 
                         <li>
                             <i className="fa fa-star"></i>
                         </li>
@@ -30,7 +30,7 @@ class Product extends Component {
 
                     </ul> */}
                     <div className="item_add"><span className="item_price"><h6>ONLY ${product.price}</h6></span></div>
-                    <div className="item_add"><span className="item_price"><a href="/checkout" onClick = { () => this.onAddToCart(product) }>add to cart</a></span></div>
+                    <div className="item_add"><span className="item_price"><a  onClick = { () => this.onAddToCart(product) }>add to cart</a></span></div>
                 </div>
             </li>
         );

@@ -480,6 +480,7 @@ span.item_price {
   font-size: 1.2em;
   font-weight: 400;
   text-align: center;
+  cursor: pointer;
 }
 .item_quantity {
   margin: 1em 0;
@@ -3689,6 +3690,7 @@ a.cpns {
 .item_add a {
   padding: 7px 10px;
   font-size: 0.8125em;
+  cursor: pointer;
 }
 .box_1 {
   width: 100%;

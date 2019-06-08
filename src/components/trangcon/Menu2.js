@@ -1,15 +1,15 @@
-import React  from 'react'  //,  { useEffect, useState } 
-import { BrowserRouter as Router,  withRouter, Link } from "react-router-dom";  //Route,
+import React from 'react'  //,  { useEffect, useState } 
+import { BrowserRouter as Router, withRouter, Link } from "react-router-dom";  //Route,
 import firebase from '../../connectdb/firebase'
 function Menu2(props) {
 
 
-  if (!firebase.getCurrentUsername()) {
-    // not logged in
-    alert('Please login first')
-    props.history.replace('/login')
-    return null
-  }
+  // if (!firebase.getCurrentUsername()) {
+  //   // not logged in
+  //   alert('Please login first')
+  //   props.history.replace('/login')
+  //   return null
+  // }
 
   return (
     <div>
@@ -19,13 +19,13 @@ function Menu2(props) {
             <div className="head-t">
               <div className="logo">
                 {/* <a href="/"><img src="images/login.png" className="img-responsive" alt="true" /> </a> */}
-                <Link to="/"><img src="../images/login.png" className="img-responsive" alt="true" /> </Link>
+                <Link to="/"><img src="https://www.toolstation.com/img/brands/ringbyamazon.png" className="img-responsive" alt="true" /></Link>
               </div>
               {/* start header_right */}
               <div className="header_right">
                 <div className="rgt-bottom">
-                  <div className="text-danger">Hello {firebase.getCurrentUsername()}</div>
-                  <button className="btn-danger" onClick={logout}>Logout</button>
+                  <div className="text-danger"></div>
+                  {/* <button className="btn-danger" onClick={logout}>Logout</button> */}
                   <div className="cart box_1">
 
                     <Link to="/checkout">
@@ -59,10 +59,10 @@ function Menu2(props) {
 
     </div>
   )
-  async function logout() {
-    await firebase.logout()
-    props.history.push('/')
-  }
+  // async function logout() {
+  //   await firebase.logout()
+  //   props.history.push('/')
+  // }
 }
 
 export default withRouter(Menu2);

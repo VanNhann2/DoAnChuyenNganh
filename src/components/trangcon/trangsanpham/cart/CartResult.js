@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
+import firebase from '../../../../connectdb/firebase'
+import { withRouter } from "react-router-dom";
 
 class CartResult extends Component {
     render() {
+        // if (!firebase.getCurrentUsername()) {
+        //     // not logged in
+        //     alert('Please login first')
+        //     this.props.history.push('/login')
+        //     return null
+        //   }
         var { cart } = this.props
          return (
             <div className="col-md-3 cart-total">
@@ -22,7 +30,7 @@ class CartResult extends Component {
                     <div className="clearfix"> </div>
                 </ul>
                 <div className="clearfix" />
-                <a className="order" href="true">Place Order</a>
+                <a className="order" onClick={() => this.payment()}>Place Order</a>
                 <div className="total-item">
                     <h3>OPTIONS</h3>
                     <h4>COUPONS</h4>
@@ -32,6 +40,14 @@ class CartResult extends Component {
             </div>
 
         );
+    }
+    payment = () =>{
+        if (!firebase.getCurrentUsername()) {
+                // not logged in
+                alert('Please login first')
+                this.props.history.push("/login")
+                return null
+              }
     }
 
     showTotalAmount = (cart) => {
@@ -43,6 +59,7 @@ class CartResult extends Component {
         }
         return total;
     }
+
 }
 
-export default CartResult;
+export default withRouter(CartResult);

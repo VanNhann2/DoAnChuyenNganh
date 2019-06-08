@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { BrowserRouter as  Link } from "react-router-dom"; //  Router, Route,
+import { BrowserRouter as Link } from "react-router-dom"; //  Router, Route,
 
 class CartItem extends Component {
 
@@ -12,8 +12,8 @@ class CartItem extends Component {
     render() {
         var { item } = this.props
         console.log(item.product);
-        
-        var {quantity} = item.quantity > 0 ? item : this.state
+
+        var { quantity } = item.quantity > 0 ? item : this.state
         return (
             <div className="cart-header">
                 <div className="close">
@@ -32,19 +32,20 @@ class CartItem extends Component {
                         </h3>
                         <ul className="qty">
                             {/* <li><p>Size : 5</p></li>  PHẢI CÓ THÊM SỐ LƯỢNG TẠI ĐÂY..........................................................*/}
-                            <li><p>Số lượng mua: {quantity}</p></li> <br />
-                            <li><p>Số hiệu:  {item.product.model}</p></li> <br />
-                            <li><p>Tổng tiền: {this.totalMoney(item.product.price, item.quantity)}</p></li>
-                            <button className="btn btn-warning"
+                            <li><p>Số lượng mua: {quantity}</p></li> 
+                            <button className="btn btn-danger"
                                 onClick={() => this.onUpdateQuantity(item.product, item.quantity - 1)}>
                                 -</button>
-
-                            <button className="btn btn-danger"
+                                &nbsp;
+                            <button className="btn btn-success"
                                 onClick={() => this.onUpdateQuantity(item.product, item.quantity + 1)}>
                                 +</button>
+                            <br />
+                            <li><p>Số hiệu:  {item.product.model}</p></li> <br />
+                            <li><p>Tổng tiền: {this.totalMoney(item.product.price, item.quantity)}</p></li>
+                           
                         </ul>
-                        <div className="delivery">
-                            <p>Service Charges : Rs.100.00</p>
+                    <div className="delivery">
                             <span>Delivered in 2-3 bussiness days</span>
                             <div className="clearfix" />
                         </div>
@@ -56,7 +57,7 @@ class CartItem extends Component {
     }
 
     onUpdateQuantity = (product, quantity) => {
-        if(quantity > 0){
+        if (quantity > 0) {
             this.setState({
                 quantity: quantity
             })
@@ -66,7 +67,7 @@ class CartItem extends Component {
 
 
 
-    onDeleteProduct = (product)  => {
+    onDeleteProduct = (product) => {
         var { onDeleteProductInCart } = this.props
         onDeleteProductInCart(product)
 

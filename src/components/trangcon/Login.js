@@ -64,7 +64,7 @@ function Login(props) {
       await firebase.login(email, password)
       props.history.replace('/home')
     } catch (error) {
-      console.log("error")
+      alert('account is not correct.!! Please login again')
     }
   }
 

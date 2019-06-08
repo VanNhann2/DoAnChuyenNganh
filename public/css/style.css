@@ -1,9 +1,9 @@
-
-i.fas.fa-search {
-    margin: 7px 25px;
-    cursor: pointer;
-}
-
+/*--A Design by W3layouts 
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+--*/
 body a {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;
@@ -57,7 +57,7 @@ body{
 }
 /*-- //header-left --*/
 /*-- top-nav --*/
-.top-nav{
+/* .top-nav{
     margin: 2em 0 0 0;
 }
 .top-nav ul{
@@ -79,21 +79,8 @@ body{
 }
 ul.nav.navbar-nav {
     float: none;
-    text-align: center;
-	background: none;
-}
-.nav .nav-me {
-	float: left;
-    display: flex;
-    margin: 2% 8%;
+    text-align: left;
     background: none;
-}
-ul.nav.navbar-nav.navbar-right.ml-auto {
-    width: 32%;
-    float: right;
-    text-align: right;
-    margin-top: 2%;
-    margin-right: 6%;
 }
 .navbar-default{
     background: none;
@@ -130,7 +117,7 @@ ul.nav.navbar-nav.navbar-right.ml-auto {
 .top-nav ul li a.active{
     color: #8BC34A !important;
     background: none;
-}
+} */
 /*-- //top-nav --*/
 /*-- w3-banner --*/
 .w3-banner{
