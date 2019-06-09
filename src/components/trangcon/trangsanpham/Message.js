@@ -4,10 +4,10 @@ class Message extends Component {
     render() {
         var { message } = this.props;
         return (
-            <div>
+            <div className="mt-3">
                 <h3 className="btn btn-success" >
                   {message}
-                   
+    
                 </h3>
             </div>
         );

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Search from './Search';
 
 
 
@@ -9,7 +10,8 @@ class Products extends Component {
 
         <div className="special">
           <div className="container">
-            <h3>Special Offers</h3>
+            <h3>New Products</h3>
+            <Search/>
             <div className="specia-top">
               <ul className="grid_2">
                 { this.props.children }

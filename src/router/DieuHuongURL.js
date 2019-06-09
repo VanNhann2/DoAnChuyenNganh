@@ -13,7 +13,7 @@ class DieuHuongURL extends Component {
         return (
             
                 <div>
-                    <Route exact path="/" component={Login} />
+                    <Route exact path="/" component={Home} />
                     <Route path='/home' component = {Home}/>
                     <Route path="/canon" component={Canon}/>
                     <Route path="/detail" component={Detail} />

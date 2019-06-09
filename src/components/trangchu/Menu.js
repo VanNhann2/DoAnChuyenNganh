@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router,  withRouter, NavLink } from "react-router-dom";  //Route,
+import { BrowserRouter as Router,  withRouter, NavLink,Link } from "react-router-dom";  //Route,
 import firebase from '../../connectdb/firebase'
 function Menu(props) {
   
@@ -47,7 +47,7 @@ function Menu(props) {
 
 <nav className="navbar navbar-default navbar-expand-xl navbar-light">
   <div className="navbar-header d-flex logo">
-    <a className="navbar-brand" href="#"><i className="fas fa-camera-retro"/>     r.<b>ing</b></a>  		  
+    <Link className="navbar-brand" to='/home'><i className="fas fa-camera-retro"/>     r.<b>ing</b></Link>  		  
     <button type="button" data-target="#navbarCollapse" data-toggle="collapse" className="navbar-toggle navbar-toggler ml-auto">
       <span className="navbar-toggler-icon" />
       <span className="icon-bar" />

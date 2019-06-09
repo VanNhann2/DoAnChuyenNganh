@@ -4,6 +4,11 @@ i.fas.fa-search {
     cursor: pointer;
 }
 
+.mt-3 {
+    margin-top: 23px;
+    height: 30px;
+}
+
 body a {
   transition: 0.5s all;
   -webkit-transition: 0.5s all;

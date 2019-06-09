@@ -4,7 +4,7 @@ import Products from '../components/trangcon/trangsanpham/products/Products'
 import Product from '../components/trangcon/trangsanpham/products/Product';
 import PropTypes from 'prop-types';
 import { actAddToCart, actChangeMessage } from '../actions/index'
-//import message from '../reducers/message';
+
 
 class ProductsContainer extends Component {
   render() {
@@ -67,6 +67,7 @@ const mapDispatchToProps = (dispatch, props) => {
       onChangeMessage : (message) => {
         dispatch(actChangeMessage(message))
       }
+      
     }
 }
 
