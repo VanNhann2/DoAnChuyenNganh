@@ -35,7 +35,7 @@ export const actUpdateProductInCart = (product, quantity) => {
 export const actSearch = (keywork) =>{
     return{
         type: Types.SEARCH,
-        keywork
+        keywork    // keywork : keywork : keywork
     }
     
 }

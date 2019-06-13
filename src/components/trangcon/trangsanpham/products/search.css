@@ -25,6 +25,7 @@
     border-top: 0px solid white;
     border-right: 0px solid gray;
     height: 40px;
+    outline: none
 }
 .me-button:hover{
     background: #8bc34a;

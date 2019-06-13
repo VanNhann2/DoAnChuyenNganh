@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../../css/style1.css';
-import { withRouter,Link } from 'react-router-dom' //Link,
+import { withRouter, Link } from 'react-router-dom' //Link,
 import firebase from '../../connectdb/firebase'
 import './register.css'
 function Register(props) {
@@ -27,12 +27,12 @@ function Register(props) {
                   <label htmlFor="inputUserame">Username</label>
                 </div>
                 <div className="form-label-group">
-                  <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required  onChange={e => setEmail(e.target.value)}/>
+                  <input type="email" id="inputEmail" className="form-control" placeholder="Email address" required onChange={e => setEmail(e.target.value)} />
                   <label htmlFor="inputEmail">Email address</label>
                 </div>
                 <hr />
                 <div className="form-label-group">
-                  <input type="password" id="inputPassword" className="form-control" placeholder="Password" required onChange={e => setPassword(e.target.value) }/>
+                  <input type="password" id="inputPassword" className="form-control" placeholder="Password" required onChange={e => setPassword(e.target.value)} />
                   <label htmlFor="inputPassword">Password</label>
                 </div>
                 <div className="form-label-group">
@@ -50,6 +50,7 @@ function Register(props) {
         </div>
 
         <div className="col-sm-3 col-md-5 col-lg-7 mx-auto">
+          <div>rê chuột quanh đây để tìm nút quay về Login</div>
           <div className="changecsslogin">
             <Link to='/login'>Back Login <i class="fas fa-arrow-right" /></Link>
           </div>

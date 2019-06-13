@@ -7,14 +7,22 @@ import { actAddToCart, actChangeMessage } from '../actions/index'
 
 
 class ProductsContainer extends Component {
+  
   render() {
 
-    var { products } = this.props;
+
+    var { products,keywork } = this.props;
+    //search
+    products = products.filter((product) => {
+      return product.name.toLowerCase().indexOf(keywork.toLowerCase()) !== -1
+    })
+    
     return (
         <Products>
             { this.showProducts(products)}
         </Products>
-    );
+    );  
+        
   }
 
   
@@ -54,7 +62,8 @@ ProductsContainer.propTypes = {
 
 const mapStateToProps = state => {
   return {
-    products: state.products
+    products: state.products,
+    keywork : state.search
   }
 }
 

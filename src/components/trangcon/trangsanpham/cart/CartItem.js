@@ -42,7 +42,7 @@ class CartItem extends Component {
                                 +</button>
                             <br />
                             <li><p>Số hiệu:  {item.product.model}</p></li> <br />
-                            <li><p>Tổng tiền: {this.totalMoney(item.product.price, item.quantity)}</p></li>
+                            <li><p>Tổng tiền: {() => this.totalMoney(item.product.price, item.quantity)}</p></li>
                            
                         </ul>
                     <div className="delivery">

@@ -43,6 +43,8 @@ function Login(props) {
         </div>
 
         <div className="col-sm-3 col-md-5 col-lg-7 mx-auto">
+          <div>rê chuột quanh đây để tìm nút Register</div>
+
           <div className="changecsslogin">
             <Link to='/register'>Register <i class="fas fa-arrow-right" /></Link>
           </div>

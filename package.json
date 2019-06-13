@@ -36,6 +36,7 @@
     ]
   },
   "devDependencies": {
-    "npm-install-webpack-plugin": "^4.0.5"
+    "npm-install-webpack-plugin": "^4.0.5",
+    "typescript": "^3.5.1"
   }
 }

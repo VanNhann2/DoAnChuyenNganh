@@ -36,11 +36,20 @@ class Firebase {
       })
     }
 
-    addQuote(quote){
-      if(!this.auth.currentUser){
-        return console.log('not authorized...!!!')
+    // addQuote(quote){
+    //   if(!this.auth.currentUser){
+    //     return console.log('not authorized...!!!')
+    //   }
+    //   return this.db.doc(`user_codedamn_video/${this.auth.currentUser.uid}`).set({
+    //     quote
+    //   })
+    // }
+    addQuote(quote) {
+      if(!this.auth.currentUser) {
+        return alert('Not authorized')
       }
-      return this.db.doc(`user_codedamn_video/${this.auth.currentUser.uid}`).set({
+  
+      return this.db.doc(`users_codedamn_video/${this.auth.currentUser.uid}`).set({
         quote
       })
     }

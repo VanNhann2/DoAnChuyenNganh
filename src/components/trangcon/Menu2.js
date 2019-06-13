@@ -1,6 +1,6 @@
 import React from 'react'  //,  { useEffect, useState } 
 import { BrowserRouter as Router, withRouter, Link } from "react-router-dom";  //Route,
-import firebase from '../../connectdb/firebase'
+//import firebase from '../../connectdb/firebase'
 function Menu2(props) {
 
 

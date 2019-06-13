@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './search.css'
-import { connect } from 'react-redux' 
+import { connect } from 'react-redux'
 import { actSearch } from '../../../../actions/index'
 
 class Search extends Component {
@@ -12,17 +12,18 @@ class Search extends Component {
         }
     }
 
-    onHandleChange = (even) =>{
+    onHandleChange = (even) => {
         this.setState({
-            keywork : even.target.value
+            keywork: even.target.value
         })
     }
+
     render() {
         return (
             <div>
                 <form className="form-actsearch">
-                    <input className="me-input" type="text" placeholder="Search" aria-label="Search" value={this.state.keywork} onChange={this.onHandleChange}/>
-                    <button className="me-button" type="button" onClick={()=> this.onSearch}>Search</button>
+                    <input className="me-input" type="text" placeholder="Search" aria-label="Search" value={this.state.keywork} onChange={this.onHandleChange} />
+                    <button className="me-button" type="button" onClick={this.onSearch}>Search</button>
                 </form>
 
             </div>
@@ -34,12 +35,12 @@ class Search extends Component {
     }
 }
 
-  
-const mapDispatchToProps = (dispatch,props) => {    
-      return{
+
+const mapDispatchToProps = (dispatch, props) => {
+    return {
         onSearch: (keywork) => {
-          dispatch(actSearch(keywork))
-        }, 
-      }
-  }
-export default connect(null, mapDispatchToProps) (Search);
+            dispatch(actSearch(keywork))
+        },
+    }
+}
+export default connect(null, mapDispatchToProps)(Search);
