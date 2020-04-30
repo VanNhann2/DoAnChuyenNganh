@@ -5,7 +5,7 @@
   "dependencies": {
     "babel-plugin-react-css-modules": "^5.2.6",
     "css-loader": "^2.1.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0",
